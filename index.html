@@ -6,13 +6,45 @@
     <title>Github Issue Tracker</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
-    <!-- daisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/daisyui.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.js"></script>
+    <!-- daisyUI + tailwindcss -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Hello world</h1>
+<body class="bg-[#F8FAFC] py-20">
+    <section id="login-form " class="bg-base-100 w-full max-w-sm shadow-2xl mx-auto rounded-xl">
+        <div class=" w-full text-center ">
+            <img class="mx-auto pt-8" src="assets/github-logo.png" alt="">
+            <h1 class="text-2xl text-[#64748B] font-semibold mt-6">Github Issue Tracker</h1>
+            <p class="text-[#64748B] mt-1">Sign in to manage your issues</p>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                <label class="label text-[#1F2937] font-medium text-[16px]">Username</label>
+                <input type="text" class="input placeholder:text-[#64748B]" placeholder="Enter Username" required />
+                <p class="text-[#4A00FF]">Default: admin</p>
+            
+                <label class="label text-[#1F2937] font-medium text-[16px]">Password</label>
+                <input type="password" class="input placeholder:text-[#64748B]" placeholder="Enter Password" required />
+                <p class="text-[#4A00FF]">Default: admin123</p>
+
+                <button class="btn btn-primary mt-4">Sign In</button>
+                </fieldset>
+            </div>
+        </div>
+
+        <div class="divider border-dotted px-6 ">OR</div>
+
+        <div class="text-center pb-7">
+            <p class="text-[#64748B]">Demo Credentials:</p>
+            <div class="bg-gray-100 p-4 w-[85%] mx-auto mt-2">
+                <p><span class="font-semibold text-[#1F2937]">Username:</span> admin</p>
+                <p><span class="font-semibold text-[#1F2937]">Password:</span> admin123</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
