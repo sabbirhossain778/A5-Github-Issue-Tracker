@@ -49,6 +49,10 @@ const loadAllCard = (issues) =>{
         }
         cardContainer.append(card)
     }
+    let cardsAmount = document.getElementById('card-container').childElementCount;
+    console.log(cardsAmount);
+    const counts = document.getElementById('issue-count')
+    counts.innerText = cardsAmount;
     
 }
 
@@ -74,5 +78,9 @@ function handleActive(clickedButton) {
     }
 }
 
+
 loadAllIssues();
 
+// const counts = document.getElementById('issue-count')
+// counts.innerText = allIssuesData.length;
+// console.log(counts);
