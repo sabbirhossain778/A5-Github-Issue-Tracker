@@ -26,3 +26,11 @@
 5️⃣ What are template literals?
  =>
     আগে স্ট্রিং বা টেক্সটের সাথে ভেরিয়েবল যোগ করতে গেলে + চিহ্ন দিয়ে অনেক ঝামেলা করতে হতো। এখন ব্যাকটিক (`) ব্যবহার করে ${ } এর ভেতরে খুব সহজেই ভেরিয়েবল বসিয়ে দেওয়া যায়। এতে ডাইনামিক কাজগুলো অনেক সহজ হয়ে গেছে।
+
+
+    • Project Links & Preview
+Live Demo: https://sabbirhossain778.github.io/A5-Github-Issue-Tracker/
+
+GitHub Repository: https://github.com/sabbirhossain778/A5-Github-Issue-Tracker
+
+Home Page Preview: https://sabbirhossain778.github.io/A5-Github-Issue-Tracker/all.html
