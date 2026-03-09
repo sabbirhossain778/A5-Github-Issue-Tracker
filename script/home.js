@@ -137,11 +137,20 @@ loadAllIssues();
 
 
 const searchInput = document.getElementById('input-search');
-searchInput.addEventListener('input', () => {
-    const searchText = searchInput.value.toLowerCase();
+searchInput.addEventListener('input', (e) => {
+    const searchText = e.target.value;
 
-    const filteredIssues = allIssuesData.filter(issue => 
-        issue.title.toLowerCase().includes(searchText)
-    );
-    loadAllCard(filteredIssues);
+    if (searchText.length === 0) {
+        loadAllCard(allIssuesData);
+        return;
+    }
+
+    manageSpinner(true);
+
+    fetch(`https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=${searchText}`)
+        .then(res => res.json())
+        .then(json => {
+            loadAllCard(json.data);
+            manageSpinner(false);
+        });
 });

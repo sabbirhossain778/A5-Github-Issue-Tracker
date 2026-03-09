@@ -1,129 +1,28 @@
-# 🌟 Welcome To (সহজ সরল সিম্পল) Assignment - 5
+1️⃣ What is the difference between var, let, and const?
+=>    
+    var: এটি পুরনো আমলের। একই নামে বারবার    ভেরিয়েবল ডিক্লেয়ার করা যায়, যা অনেক সময় কোডে ঝামেলা পাকায়।
 
-# **📅 Deadline For 60 marks:** 9th March, 2026 (11:59 pm ⏱️)  
-#  📅 No Deadline For 50 marks  
-# **📅 Deadline For 30 marks:** Any time after 9th March.
+    let: এটি আধুনিক। একই নামের ভেরিয়েবল এক ব্লকে একবারই ডিক্লেয়ার করা যায়। এর মান পরে পরিবর্তন করা সম্ভব।
 
----
+    const: এটি 'Constant' বা ধ্রুবক। এর মান একবার সেট করলে আর পাল্টানো যায় না।
 
-# Assignment-05: GitHub Issues Tracker
+2️⃣ What is the spread operator (...)?
+=> 
+  তিনটি ডট দিয়ে এটি লেখা হয়। এর কাজ হলো কোনো অ্যারে বা অবজেক্টের সব উপাদানকে "ছড়িয়ে দেওয়া" বা কপি করা। যেমন: একটি অ্যারের সব ডাটা অন্য একটি নতুন অ্যারেতে একবারে ঢুকিয়ে দিতে এটি ব্যবহার করা হয়।
+  
+3️⃣ What is the difference between map(), filter(), and forEach()?
+ =>
+    forEach: এটি জাস্ট একটা লুপ। অ্যারের ভেতরে একটা একটা করে ঢুকে কাজ করে দেয়, কিন্তু কাজের শেষে নতুন কিছু ফেরত দেয় না।
 
+    map: এটিও লুপের মতো কাজ করে, কিন্তু শেষে একটা নতুন অ্যারে বানিয়ে ফেরত দেয়।
 
-### **API Endpoints:**
-###  **All Issues:** 
-  - https://phi-lab-server.vercel.app/api/v1/lab/issues 
+    filter: এটি শর্ত দিয়ে চেক করে। যেমন: আপনি যদি বলেন শুধু 'লাল' কালারগুলো নাও, তবে সে একটা নতুন অ্যারেতে শুধু 'লাল' গুলোই জমিয়ে দেবে।
 
-
-###  **Single Issue:**
-   - https://phi-lab-server.vercel.app/api/v1/lab/issue/{id}
-
-   - Example: https://phi-lab-server.vercel.app/api/v1/lab/issue/33
-
-
-###  **Search Issue:** https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q={searchText}
-
-   - Example:  https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=notifications
+4️⃣ What is an arrow function?
+ => 
+    আগে আমরা ফাংশন লিখতাম function abc() { } এভাবে। অ্যারো ফাংশনে এই function লেখাটা লাগে না, তার বদলে জাস্ট => (তীর চিহ্ন) দিয়ে কাজ সারানো যায়। এতে কোড দেখতে অনেক ছোট ও পরিষ্কার হয়।
 
 
----
-
-## 📝 Main Requirements
-
-## 🎨 Design Part
-
-## Login Page
-- Create a login page containing a logo, title, and sub-title
-- Below that, there will be 2 inputs, a sign-in button, and a demo credential to sign in. Follow the Figma for this page 
-- Styled as per Figma
-
-## Main Page: 
-
-### Navbar: 
-
-- Navbar with website logo/name on the left
-- Search input and button on the right
-
-### Tab Section like Figma: 
-
-- 3 tab ( All, Open, Closed) at the top of this section.(**All**, **Open**, **Closed**)
-
-- Below the tab, there will be an icon, the issue count, some text on the left, and an open and closed marker on the right
-
-- Responsiveness: The website should be responsive for mobile devices. It is totally up to you. 
-
-
---- 
-
-
-## ⚙️ Functionalities
-- In login page, there will be default admin credentials (username, password). You need to sign in using these credentials.
-
-- Load all issues and display as per Figma
-
-- On clicking on an open or closed tab, it will load the issues data of the related tab and show it in a display-like card in a 4-column layout like Figma. By default, it will show all data 
-
-- Each card shows:
-  - Title
-  - Description
-  - Status
-  - Category
-  - Author
-  - Priority
-  - Label
-  - CreatedAt
-- Clicking on an issue  card will open a modal and show all the information about that Issue. 
-
-### 🚀 Challenges
-
-
-- Show the card Top border based on their category(open, closed), open card will have Green Boder, closed card will have a purple border on top. 
-
-- Loading spinner on data load
-
-- Show active button on changing category names
-
-- Implement Search Functionality and 8 meaningful github commit.  
-
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
-    - 1️⃣ What is the difference between var, let, and const?
-    - 2️⃣ What is the spread operator (...)?
-    - 3️⃣ What is the difference between map(), filter(), and forEach()?
-    - 4️⃣ What is an arrow function?
-    - 5️⃣ What are template literals?
-
-
----
-
-## 🛠️ Technology Stack
-
-- **HTML**
-- **CSS** (Vanilla/Tailwind/DaisyUI)
-- **JavaScript** (Vanilla)
-
----
-
-## 🔑 Demo Credentials
-
-```text
-Username: admin
-Password: admin123
-```
-
-
----
-
-### Optional: 
- - No need to show status: Open, Closed styles On modals. 
- - No Need to show icon on labels 
- - No need to apply styles on Priority 
---- 
-
-
-## 📤 What to submit
-
-- **GitHub Repository Link:**
-- **Live Site Link:**
-
----
-
-
+5️⃣ What are template literals?
+ =>
+    আগে স্ট্রিং বা টেক্সটের সাথে ভেরিয়েবল যোগ করতে গেলে + চিহ্ন দিয়ে অনেক ঝামেলা করতে হতো। এখন ব্যাকটিক (`) ব্যবহার করে ${ } এর ভেতরে খুব সহজেই ভেরিয়েবল বসিয়ে দেওয়া যায়। এতে ডাইনামিক কাজগুলো অনেক সহজ হয়ে গেছে।
