@@ -154,3 +154,4 @@ searchInput.addEventListener('input', (e) => {
             manageSpinner(false);
         });
 });
+
